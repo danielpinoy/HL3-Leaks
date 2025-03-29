@@ -51,35 +51,12 @@ const CreditsPage = () => {
 
               <div className="bg-gray-700 p-4 rounded">
                 <h3 className="text-xl font-semibold mb-2 text-orange-300">
-                  Website Development
-                </h3>
-                <ul className="list-disc pl-6 space-y-1 text-gray-300">
-                  <li>Website design and implementation</li>
-                  <li>React component architecture</li>
-                  <li>Half-Life themed styling</li>
-                  <li>Data organization and presentation</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-4 rounded">
-                <h3 className="text-xl font-semibold mb-2 text-orange-300">
                   Technical Analysis
                 </h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-300">
                   <li>Source 2 code analysis experts</li>
                   <li>Game development professionals</li>
                   <li>Valve SDK researchers</li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-700 p-4 rounded">
-                <h3 className="text-xl font-semibold mb-2 text-orange-300">
-                  Community Support
-                </h3>
-                <ul className="list-disc pl-6 space-y-1 text-gray-300">
-                  <li>Feedback and testing</li>
-                  <li>Content verification</li>
-                  <li>Sharing and spreading awareness</li>
                 </ul>
               </div>
             </div>
