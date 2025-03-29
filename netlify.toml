@@ -1,0 +1,33 @@
+# netlify.toml file
+# This configuration tells Netlify to route all requests to index.html
+# This allows React Router to handle client-side routing
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Optional performance optimizations
+[build]
+  publish = "dist"  # Default publish directory for Vite apps
+
+# Cache settings for better performance
+[[headers]]
+  for = "/*"
+    [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/*.js"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/assets/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
