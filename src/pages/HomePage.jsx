@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
+
 import FindingCard from "../components/FindingCard";
 import InfoAlert from "../components/InfoAlert";
 import CategorySection from "../components/CategorySection";
