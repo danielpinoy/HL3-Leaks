@@ -1,0 +1,125 @@
+import React from "react";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+const CreditsPage = () => {
+  return (
+    <div className="min-h-screen bg-gray-900 text-gray-200 flex flex-col">
+      <Header />
+
+      {/* Credits header */}
+      <section className="bg-gradient-to-b from-black to-gray-900 py-12">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center mb-4">
+            <a href="/" className="text-orange-500 hover:underline mr-4">
+              Home
+            </a>
+            <span className="text-gray-500 mx-2">→</span>
+            <span className="text-gray-300">Credits</span>
+          </div>
+
+          <h1 className="text-3xl md:text-4xl font-bold text-orange-500">
+            Credits & Acknowledgments
+          </h1>
+          <p className="mt-4 text-xl text-gray-300 max-w-4xl">
+            This project is made possible by the collective efforts of the
+            Half-Life community.
+          </p>
+        </div>
+      </section>
+
+      {/* Main content */}
+      <main className="container mx-auto px-4 py-12 flex-grow">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-gray-800 p-6 rounded-lg mb-8">
+            <h2 className="text-2xl font-bold mb-6 text-orange-400">
+              Project Contributors
+            </h2>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gray-700 p-4 rounded">
+                <h3 className="text-xl font-semibold mb-2 text-orange-300">
+                  Research & Data Collection
+                </h3>
+                <ul className="list-disc pl-6 space-y-1 text-gray-300">
+                  <li>The Half-Life community on Reddit</li>
+                  <li>Valve News Network contributors</li>
+                  <li>Source engine modding communities</li>
+                  <li>Anonymous contributors and data miners</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-700 p-4 rounded">
+                <h3 className="text-xl font-semibold mb-2 text-orange-300">
+                  Website Development
+                </h3>
+                <ul className="list-disc pl-6 space-y-1 text-gray-300">
+                  <li>Website design and implementation</li>
+                  <li>React component architecture</li>
+                  <li>Half-Life themed styling</li>
+                  <li>Data organization and presentation</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-700 p-4 rounded">
+                <h3 className="text-xl font-semibold mb-2 text-orange-300">
+                  Technical Analysis
+                </h3>
+                <ul className="list-disc pl-6 space-y-1 text-gray-300">
+                  <li>Source 2 code analysis experts</li>
+                  <li>Game development professionals</li>
+                  <li>Valve SDK researchers</li>
+                </ul>
+              </div>
+
+              <div className="bg-gray-700 p-4 rounded">
+                <h3 className="text-xl font-semibold mb-2 text-orange-300">
+                  Community Support
+                </h3>
+                <ul className="list-disc pl-6 space-y-1 text-gray-300">
+                  <li>Feedback and testing</li>
+                  <li>Content verification</li>
+                  <li>Sharing and spreading awareness</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg mb-8">
+            <h2 className="text-2xl font-bold mb-4 text-orange-400">
+              Special Thanks
+            </h2>
+            <p className="mb-4 text-gray-300">
+              A special acknowledgment to all Half-Life fans who have patiently
+              waited for Half-Life 3 over the years, keeping the community alive
+              and passionate. Your dedication to the franchise continues to
+              inspire this project.
+            </p>
+            <p className="text-gray-300">
+              We also want to thank Valve for creating the Half-Life universe
+              and the Source engine, which have provided endless hours of
+              enjoyment and inspiration for gamers and developers alike.
+            </p>
+          </div>
+
+          <div className="bg-gray-800 p-6 rounded-lg">
+            <h2 className="text-2xl font-bold mb-4 text-orange-400">
+              Disclaimer
+            </h2>
+            <p className="text-gray-300">
+              This site is a fan project and is not affiliated with Valve
+              Corporation. Half-Life and all related trademarks are the property
+              of Valve Corporation. The findings and information presented on
+              this site are based on community research and may not represent
+              actual Valve projects or plans.
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default CreditsPage;

@@ -1,0 +1,167 @@
+/* App-specific styles */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Half-Life themed scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff7400;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8c00;
+}
+
+/* Code snippet styles */
+pre {
+  font-family: "Consolas", "Monaco", "Andale Mono", monospace;
+  background-color: #1a1a1a;
+  border-radius: 4px;
+  padding: 1rem;
+  overflow-x: auto;
+  position: relative;
+}
+
+code {
+  color: #e0e0e0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Lambda highlight effect for important sections */
+.lambda-highlight {
+  position: relative;
+}
+
+.lambda-highlight::before {
+  content: "λ";
+  position: absolute;
+  left: -20px;
+  color: #ff7400;
+  opacity: 0.5;
+}
+
+/* Loading animation */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.loading-spinner {
+  border: 4px solid rgba(255, 116, 0, 0.1);
+  border-left-color: #ff7400;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hover effect for cards */
+.finding-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.finding-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Typography enhancements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.code-keyword {
+  color: #ff7400;
+  font-weight: bold;
+}
+
+.code-string {
+  color: #a5d6a7;
+}
+
+.code-comment {
+  color: #78909c;
+  font-style: italic;
+}
+
+/* Custom Half-Life themed button */
+.hl-button {
+  background-color: #ff7400;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.hl-button:hover {
+  background-color: #ff8c00;
+}
+
+.hl-button:active {
+  background-color: #e66a00;
+}
+
+/* Container for content with max width */
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .lambda-highlight::before {
+    display: none;
+  }
+
+  pre {
+    font-size: 0.8rem;
+  }
+}
