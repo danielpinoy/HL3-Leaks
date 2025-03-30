@@ -79,8 +79,7 @@ const leakData = {
     {
       id: "hl3-bugreporter",
       title: "HL3 Mention in Deadlock Bugreporter Config",
-      description:
-        'References in Deadlock bug reporter using "HLX" identifier suggests late-stage Half-Life 3 development.',
+      description: "References in Deadlock bug reporter",
       category: "findings",
       codeSnippet: `"HLX"
   {
@@ -97,7 +96,7 @@ const leakData = {
     },
     {
       id: "fsr3-implementation",
-      title: "HL3 FSR3 (2025)",
+      title: "HL3 FSR3",
       description:
         "FSR 3 implementation typically occurs in the later stages of game development, after core mechanics and rendering pipelines are established.",
       category: "findings",
