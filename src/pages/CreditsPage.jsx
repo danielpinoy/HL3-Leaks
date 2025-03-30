@@ -69,14 +69,15 @@ const CreditsPage = () => {
             </h2>
             <p className="mb-4 text-gray-300">
               A special acknowledgment to all Half-Life fans who have patiently
-              waited for Half-Life 3 over the years, keeping the community alive
-              and passionate. Your dedication to the franchise continues to
-              inspire this project.
+              waiting for Half-Life 3 like it’s the Second Coming. Your
+              masochistic loyalty is basically the only reason this project
+              didn’t die in a ditch.
             </p>
             <p className="text-gray-300">
               We also want to thank Valve for creating the Half-Life universe
-              and the Source engine, which have provided endless hours of
-              enjoyment and inspiration for gamers and developers alike.
+              and the Source engine so we could waste our lives modding while
+              they sip cocktails on a yacht made of CS:GO skin money—cheers to
+              that, you glorious bastards.
             </p>
           </div>
 
