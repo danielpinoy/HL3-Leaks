@@ -85,7 +85,9 @@ const HomePage = () => {
             {animatedText}
             <span className="animate-blink">|</span>
           </p>
-
+          <div className="absolute inset-0 z-0">
+            <ThreeJsBackground />
+          </div>
           <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
             <div className="bg-orange-800 text-white px-6 py-3 rounded-lg relative overflow-hidden group">
               <span className="relative z-10">
@@ -98,9 +100,7 @@ const HomePage = () => {
       </section>
 
       {/* Content area with ThreeJsBackground */}
-      <div className="absolute inset-0 z-0">
-        <ThreeJsBackground />
-      </div>
+
       <div className="relative flex-grow">
         {/* Add ThreeJsBackground for the entire content area */}
 
