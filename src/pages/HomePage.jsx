@@ -93,13 +93,6 @@ const HomePage = () => {
               </span>
               <div className="absolute inset-0 bg-orange-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
             </div>
-
-            <button
-              onClick={() => window.scrollTo({ top: 500, behavior: "smooth" })}
-              className="bg-gray-800 hover:bg-gray-700 text-orange-500 px-6 py-3 rounded-lg transition-colors duration-300"
-            >
-              Explore Findings →
-            </button>
           </div>
         </div>
       </section>
