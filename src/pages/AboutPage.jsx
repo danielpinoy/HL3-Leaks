@@ -42,30 +42,6 @@ const AboutPage = () => {
 
           <div className="bg-gray-800 p-6 rounded-lg mb-8">
             <h2 className="text-2xl font-bold mb-4 text-orange-400">
-              Project Goals
-            </h2>
-            <p className="mb-4">
-              Half-Life 3 has become one of gaming's most legendary unreleased
-              titles. This project aims to:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li>
-                Document and preserve evidence of Half-Life 3's development
-              </li>
-              <li>
-                Analyze code snippets and references to understand what the game
-                might have included
-              </li>
-              <li>
-                Create a central repository for the Half-Life community to track
-                development evidence
-              </li>
-              <li>Present findings in an organized, accessible format</li>
-            </ul>
-          </div>
-
-          <div className="bg-gray-800 p-6 rounded-lg mb-8">
-            <h2 className="text-2xl font-bold mb-4 text-orange-400">
               Methodology
             </h2>
             <p className="mb-4">
