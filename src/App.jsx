@@ -6,12 +6,10 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import FindingDetailPage from "./pages/FindingDetailPage";
 import CreditsPage from "./pages/CreditsPage";
-
-// Import data utilities
+import NewsDetailPage from "./pages/NewsDetailPage";
+import NewsPage from "./pages/NewsPage";
 
 function App() {
-  // Get all categories for the routes
-
   return (
     <Router>
       <div className="App">
@@ -24,6 +22,10 @@ function App() {
 
           {/* Finding detail page route */}
           <Route path="/finding/:findingId" element={<FindingDetailPage />} />
+
+          {/* News routes */}
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:newsId" element={<NewsDetailPage />} />
 
           {/* Credits page route */}
           <Route path="/credits" element={<CreditsPage />} />

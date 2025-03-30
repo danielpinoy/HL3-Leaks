@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Sidebar from "../components/Sidebar";
-
 import FindingCard from "../components/FindingCard";
 import InfoAlert from "../components/InfoAlert";
 import CategorySection from "../components/CategorySection";
@@ -102,29 +101,37 @@ const HomePage = () => {
                   ))}
                 </div>
 
-                {/* Explore categories section */}
-                {/* <div className="mt-12">
-                  <h2 className="text-2xl font-bold mb-6 text-orange-500">
-                    Explore Categories
+                <div className="bg-gray-800 p-6 rounded-lg border border-gray-700 mb-12">
+                  <h2 className="text-2xl font-bold mb-4 text-orange-400">
+                    Recent Updates
                   </h2>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {categories.map((category) => (
-                      <div
-                        key={category.id}
-                        className="bg-gray-800 p-4 rounded hover:bg-gray-700 transition-colors cursor-pointer border border-gray-700"
-                        onClick={() => setActiveCategory(category.id)}
-                      >
-                        <div className="text-2xl mb-2">{category.icon}</div>
-                        <h3 className="text-lg font-bold mb-1">
-                          {category.name}
-                        </h3>
-                        <p className="text-sm text-gray-400">
-                          {category.description}
-                        </p>
+                  <ul className="space-y-4">
+                    <li className="flex items-start">
+                      <span className="text-orange-500 mr-2 mt-0.5">•</span>
+                      <div>
+                        <span className="font-semibold">March 2025:</span> Added
+                        FSR3 implementation evidence, more destructible NPC
+                        systems, and deformation models
                       </div>
-                    ))}
-                  </div>
-                </div> */}
+                    </li>
+                    {/* <li className="flex items-start">
+                      <span className="text-orange-500 mr-2 mt-0.5">•</span>
+                      <div>
+                        <span className="font-semibold">February 2025:</span>{" "}
+                        Added Gravity Manipulation, NPC Scripting and Behavior
+                        System, and Mood-Based Animation System findings
+                      </div>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-orange-500 mr-2 mt-0.5">•</span>
+                      <div>
+                        <span className="font-semibold">January 2025:</span>{" "}
+                        Documented damage flags, environmental systems, and
+                        advanced hair simulation
+                      </div>
+                    </li> */}
+                  </ul>
+                </div>
               </>
             )}
           </div>

@@ -23,12 +23,6 @@ const Footer = () => {
               Home
             </a>
             <a
-              href="/categories"
-              className="hover:text-orange-500 transition-colors"
-            >
-              Categories
-            </a>
-            <a
               href="/about"
               className="hover:text-orange-500 transition-colors"
             >
