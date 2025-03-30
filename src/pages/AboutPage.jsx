@@ -50,7 +50,6 @@ const AboutPage = () => {
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-300">
               <li>Code references in other Valve games</li>
-              <li>Source 2 SDK leaked code</li>
               <li>Publicly available Valve resources</li>
               <li>Community investigations</li>
             </ul>
@@ -66,12 +65,7 @@ const AboutPage = () => {
             <h2 className="text-2xl font-bold mb-4 text-orange-400">
               Contributing
             </h2>
-            <p className="mb-4">
-              This project is community-driven, and contributions are welcome.
-              If you have additional findings, evidence, or insights to share,
-              please contact us or submit your data through the appropriate
-              channels.
-            </p>
+            <p className="mb-4">This project is community-driven.</p>
             <p className="text-gray-400">
               All contributions will be reviewed for accuracy and relevance
               before being added to the archive.

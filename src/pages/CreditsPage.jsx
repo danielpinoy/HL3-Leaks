@@ -54,9 +54,10 @@ const CreditsPage = () => {
                   Technical Analysis
                 </h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-300">
-                  <li>Source 2 code analysis experts</li>
-                  <li>Game development professionals</li>
-                  <li>Valve SDK researchers</li>
+                  <li>
+                    Dataminers (e.i. normies with basic knowledge of github)
+                  </li>
+                  <li>Game development spastics</li>
                 </ul>
               </div>
             </div>
