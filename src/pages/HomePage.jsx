@@ -49,7 +49,7 @@ const HomePage = () => {
             development of the long-awaited sequel.
           </p>
           <div className="bg-orange-800 inline-block text-white px-4 py-2 rounded">
-            Last updated: March 29, 2025
+            Last updated: March 30, 2025
           </div>
         </div>
       </section>

@@ -52,7 +52,7 @@ const Footer = () => {
             related trademarks are property of Valve Corporation.
           </p>
           <p className="text-sm text-gray-500 mt-2">
-            Last updated: March 29, 2025
+            Last updated: March 30, 2025
           </p>
         </div>
       </div>
