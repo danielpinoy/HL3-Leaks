@@ -103,7 +103,7 @@ const HomePage = () => {
                 </div>
 
                 {/* Explore categories section */}
-                <div className="mt-12">
+                {/* <div className="mt-12">
                   <h2 className="text-2xl font-bold mb-6 text-orange-500">
                     Explore Categories
                   </h2>
@@ -124,7 +124,7 @@ const HomePage = () => {
                       </div>
                     ))}
                   </div>
-                </div>
+                </div> */}
               </>
             )}
           </div>
