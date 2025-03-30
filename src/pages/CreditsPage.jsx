@@ -42,10 +42,11 @@ const CreditsPage = () => {
                   Research & Data Collection
                 </h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-300">
-                  <li>The Half-Life community on Reddit</li>
-                  <li>Valve News Network contributors</li>
-                  <li>Source engine modding communities</li>
-                  <li>Anonymous contributors and data miners</li>
+                  <li>
+                    Source engine modders tweaking 20-year-old code like it’s
+                    their therapy
+                  </li>
+                  <li>Anonymous contributors and dataminers</li>
                 </ul>
               </div>
 
@@ -54,9 +55,6 @@ const CreditsPage = () => {
                   Technical Analysis
                 </h3>
                 <ul className="list-disc pl-6 space-y-1 text-gray-300">
-                  <li>
-                    Dataminers (e.i. normies with basic knowledge of github)
-                  </li>
                   <li>Game development spastics</li>
                 </ul>
               </div>
@@ -76,8 +74,8 @@ const CreditsPage = () => {
             <p className="text-gray-300">
               We also want to thank Valve for creating the Half-Life universe
               and the Source engine so we could waste our lives modding while
-              they sip cocktails on a yacht made of CS:GO skin money—cheers to
-              that, you glorious bastards.
+              they sip cocktails on a yacht made of CS2 skins. Cheers to that,
+              you glorious bastards.
             </p>
           </div>
 
