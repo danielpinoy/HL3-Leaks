@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <>
       {/* Header with Lambda logo */}
-      <header className="bg-black p-4 border-b border-orange-500 sticky top-0 z-10">
+      <header className="bg-black p-4 border-b border-orange-500 sticky top-0 z-50">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
             <div className="w-10 h-10 bg-orange-500 flex items-center justify-center text-black font-bold text-2xl mr-3">
