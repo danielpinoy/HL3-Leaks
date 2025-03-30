@@ -114,9 +114,9 @@ const HomePage = () => {
             </p>
           </InfoAlert>
         </div>
-        <div className="absolute inset-0 z-0">
+        {/* <div className="absolute inset-0 z-0">
           <ThreeJsBackground />
-        </div>
+        </div> */}
         {/* Main content area */}
         <main className="container mx-auto px-4 flex-grow relative z-10">
           <div className="flex flex-col md:flex-row">
