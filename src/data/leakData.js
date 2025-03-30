@@ -234,7 +234,7 @@ const leakData = {
   EntityAntlion
   EntityZombie`,
       additionalInfo:
-        "These references show a more advanced AI system for Headcrabs, Zombies, and Antlions, allowing for more complex behaviors such as burrowing and pod emergence. The thumper flee point suggests Antlions will maintain their sand-based behavior from Half-Life 2.",
+        "These references show AI system for Headcrabs, Zombies, and Antlions, allowing for more complex behaviors such as burrowing and pod emergence. The thumper flee point suggests Antlions will maintain their sand-based behavior from Half-Life 2.",
     },
     {
       id: "ai-lod",
