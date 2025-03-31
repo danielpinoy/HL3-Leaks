@@ -4,7 +4,8 @@ import { getFindingsByCategory } from "../utils/dataParser";
 import { getNewsGroupedByPeriod } from "../utils/newsParser";
 
 const Sidebar = ({ categories, activeCategory, setActiveCategory }) => {
-  const [expandedCategories, setExpandedCategories] = useState({});
+  // We'll only keep a single expandedCategory state
+  const [expandedCategory, setExpandedCategory] = useState(null);
   const [categoryFindings, setCategoryFindings] = useState({});
   const [showCategories, setShowCategories] = useState(true);
   const [showNews, setShowNews] = useState(true);
@@ -24,12 +25,15 @@ const Sidebar = ({ categories, activeCategory, setActiveCategory }) => {
   }, [categories]);
 
   const toggleCategory = (categoryId) => {
-    setExpandedCategories((prev) => ({
-      ...prev,
-      [categoryId]: !prev[categoryId],
-    }));
+    // If clicking the same category that's already expanded, collapse it
+    if (expandedCategory === categoryId) {
+      setExpandedCategory(null);
+    } else {
+      // Otherwise, expand this category and collapse any others
+      setExpandedCategory(categoryId);
+    }
 
-    // Set this as the active category
+    // Always set the active category to the one that was clicked
     setActiveCategory(categoryId);
   };
 
@@ -124,13 +128,18 @@ const Sidebar = ({ categories, activeCategory, setActiveCategory }) => {
                     }`}
                     onClick={() => toggleCategory(category.id)}
                   >
-                    <div className="flex items-center">
-                      <span className="mr-2">{category.icon}</span>
-                      {category.name}
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center">
+                        <span className="mr-2">{category.icon}</span>
+                        {category.name}
+                      </div>
+                      <span className="text-xs text-orange-500">
+                        {expandedCategory === category.id ? "▼" : "▶"}
+                      </span>
                     </div>
                   </div>
 
-                  {expandedCategories[category.id] &&
+                  {expandedCategory === category.id &&
                     categoryFindings[category.id] && (
                       <div className="mt-1 ml-6 pl-2 border-l-2 border-gray-700">
                         <ul className="space-y-1">

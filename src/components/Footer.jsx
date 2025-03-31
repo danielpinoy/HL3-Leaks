@@ -17,24 +17,6 @@ const Footer = () => {
               </span>
             </div>
           </div>
-
-          <div className="flex space-x-6">
-            <a href="/" className="hover:text-orange-500 transition-colors">
-              Home
-            </a>
-            <a
-              href="/about"
-              className="hover:text-orange-500 transition-colors"
-            >
-              About
-            </a>
-            <a
-              href="/credits"
-              className="hover:text-orange-500 transition-colors"
-            >
-              Credits
-            </a>
-          </div>
         </div>
 
         <div className="border-t border-gray-800 pt-4 mt-4">

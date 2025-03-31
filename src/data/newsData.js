@@ -194,5 +194,53 @@ const newsData = [
   // },
 ];
 
-// Export the news data
+// Template object for adding new news items
+
+/**
+ * Template for creating a new news item
+ * Copy this object, fill in the details, and add to newsData array
+ *
+ * Example usage:
+ *
+ * const newNews = { ...newsItemTemplate };
+ * newNews.id = "valve-source2-update";
+ * newNews.title = "Valve releases major Source 2 update";
+ * newNews.date = "March 31, 2025";
+ * newNews.category = "Engine";
+ * newNews.content = [
+ *   "Valve has released a major update to Source 2 engine with new features.",
+ *   "The update includes improved physics simulation and better lighting."
+ * ];
+ * newNews.source = "Valve Blog";
+ *
+ * // Add to beginning of newsData (newest first)
+ * newsData.unshift(newNews);
+ */
+export const newsItemTemplate = {
+  id: "unique-news-slug", // usually derived from title
+  title: "News Headline Title",
+  date: "March 31, 2025", // Date in Month DD, YYYY format
+  category: "Hardware", // Category like "Hardware", "Software", "Partnership", etc.
+  image: "https://i.imgur.com/example.jpg", // URL to image (optional, set to null if none)
+  imageCaption: "Caption describing the image", // (optional, set to null if none)
+  content: [
+    "First paragraph of the news story.",
+    "Second paragraph with more details.",
+    "Additional paragraphs as needed.",
+  ],
+  source: "Source of the information", // Where this news came from
+};
+
+const newNews = { ...newsItemTemplate };
+newNews.id = "Template Helper";
+newNews.title = "Template Helper";
+newNews.date = "March 31, 2025";
+newNews.category = "Interview";
+newNews.image = "https://i.imgur.com/gaben-interview.jpg"; // Replace with actual image URL
+newNews.imageCaption = "Gabe Newell during GamesBeat interview";
+newNews.content = ["adsdawassds"];
+newNews.source = "GamesBeat Interview";
+
+// Add to the beginning of newsData (newest first)
+newsData.unshift(newNews); // Export the news data
 export default newsData;

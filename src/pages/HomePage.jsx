@@ -91,7 +91,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row justify-center gap-4 mt-8">
             <div className="bg-orange-800 text-white px-6 py-3 rounded-lg relative overflow-hidden group">
               <span className="relative z-10">
-                Last updated: March 30, 2025
+                Last updated: March 31, 2025
               </span>
               <div className="absolute inset-0 bg-orange-600 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300"></div>
             </div>
